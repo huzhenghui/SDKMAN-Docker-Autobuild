@@ -1,8 +1,7 @@
-
 FROM debian:stretch
 
 LABEL maintainer="hu@daonao.com"
 
 RUN apt-get update && \
-    apt-get install -y curl && \
+    apt-get install -y curl unzip && \
     curl -s "https://get.sdkman.io" | bash
