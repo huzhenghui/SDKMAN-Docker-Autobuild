@@ -5,5 +5,6 @@ LABEL maintainer="hu@daonao.com"
 RUN apt-get update && \
     apt-get install -y curl unzip zip && \
     curl -s "https://get.sdkman.io" | bash && \
+    chmod u+x /root/.sdkman/bin/sdkman-init.sh && \
     /root/.sdkman/bin/sdkman-init.sh && \
-    bash -l -c 'sdk'
+    sdk
